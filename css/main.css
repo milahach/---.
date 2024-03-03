@@ -1,0 +1,357 @@
+body {
+    font-family: 'Anonymous Pro', sans-serif;
+}
+
+.container {
+    max-width: 1161px;
+    margin: 0 auto;
+}
+
+
+header {
+    height: 110px;
+}
+
+.header_line {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo_black {
+    width: 212.34px;
+    height: 63.24px;
+    margin-top: 30.18px;
+}
+
+.social {
+    display: flex;
+    column-gap: 24px;
+    margin-top: 45px;
+}
+
+.social-item a {
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #F1F1F1;
+}
+
+.main {
+    background-color: #f1f1f1;
+    padding: 32px 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.title-content {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    color: #121723;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 371px;
+    height: 420px;
+    border-radius: 12px;
+    background-color: #ffffff;
+
+    transition: transform ease-out 300ms, box-shadow ease-out 300ms;
+}
+
+.card:hover, .card:focus {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-img {
+    width: 371px;
+    height: 254px;
+    border-radius: 12px, 12px, 0px, 0px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 32px 24px;
+}
+
+.name {
+    font-size: 26px;
+    font-weight: 700;
+    font-style: normal;
+    color: #121723;
+}
+
+.about {
+    font-size: 20px;
+    font-weight: 400;
+    color: #121723;
+}
+
+.content-sneaker {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.sneakers-big-img {
+    display: flex;
+    justify-content: center;
+    margin: 32px 48px;
+    height: 600px;
+    align-self: stretch;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin: 0 48px;
+}
+
+.title-sneakers {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 48px */
+}
+
+.title-1-sneakers {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 36px */
+}
+
+.content1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    align-self: stretch;
+    padding: 48px;
+}
+
+.description {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.description p {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+.about1 {
+    flex: 1 0 0;
+}
+
+.about-sneakers {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 0 24px 0;
+    border-bottom: 1px solid #121723;
+}
+
+.about-list {
+    display: flex;
+    justify-content: space-between;
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 24px 0;
+    border-bottom: 1px solid #121723;
+}
+
+footer {
+    background: #121723;
+    height: 142px;
+}
+
+.footer-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0 0 0;
+}
+
+.logo_white {
+    width: 299.65px;
+    height: 22.32px;
+}
+
+.social-footer {
+    display: flex;
+    column-gap: 24px;
+}
+
+.social-footer a {
+    color: #ffffff;
+}
+
+.line {
+    border: solid 1px #E6E8EC66;
+    margin-top: 32.68px;
+}
+
+.p-footer {
+    font-size: 16px;
+    font-weight: 700;
+    color: #A1A6B4;
+    text-align: center;
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        align-items: center;
+    }
+    .container {
+        max-width: 343px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0 16px;
+    }
+    header {
+        height: 156px;
+    }
+    .header_line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social {
+        margin-top: 24px;
+    }
+    .card {
+        max-height: 400px;
+        width: 342px;
+    }
+    .card-img{
+        height: 254px;
+        width: 343px;
+    }
+    .title-content {
+        font-size: 32px;
+    }
+    footer {
+        height: 195px;
+    }
+    .footer-line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-footer {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        align-items: center;
+    }
+    .container {
+        max-width: 343px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 0 16px;
+    }
+    header {
+        height: 156px;
+    }
+    .header_line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-sneaker {
+        border-radius: 12px;
+    }
+    .sneakers-big-img {
+        align-items: center;
+        width: 295px;
+        height: 172px;
+        margin: 0 auto;
+    }
+    .title {
+        margin: 0 24px;
+    }
+    .title-sneakers {
+        font-size: 32px;
+    }
+    .title-1-sneakers {
+        font-size: 20px;
+    }
+    .content1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        padding: 24px;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .about-sneakers {
+        font-size: 24px;
+    }
+    .about-list{
+        font-size: 16px;
+    }
+    .social {
+        margin-top: 24px;
+    }
+    footer {
+        height: 195px;
+    }
+    .footer-line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-footer {
+        margin-top: 32px;
+    }
+}
